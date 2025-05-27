@@ -5,7 +5,7 @@ these make the slideshow work
 
 .slides {
   position: relative;
-  height: 150px;
+  height: 750px;
   padding: 0px;
   margin: 0px;
   list-style-type: none;
@@ -27,42 +27,10 @@ these make the slideshow work
   z-index: 0;
 }
 
-/*
-non-essential styles:
-just for appearance; change whatever you want
-*/
-
-.slide {
-  font-size: 40px;
-  padding: 40px;
-  box-sizing: border-box;
-  background: #333;
-  color: #fff;
-}
-
-.slide:nth-of-type(1) {
-  background: red;
-}
-
-.slide:nth-of-type(2) {
-  background: orange;
-}
-
-.slide:nth-of-type(3) {
-  background: green;
-}
-
-.slide:nth-of-type(4) {
-  background: blue;
-}
-
-.slide:nth-of-type(5) {
-  background: purple;
-}
-
 /* custom styles */
 body {
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 .slides {
@@ -73,6 +41,7 @@ body {
 #controls-container,
 #indicators-container {
   display: flex;
+  justify-content: center;
   gap: 10px;
   margin-bottom: 10px;
 }
@@ -83,12 +52,12 @@ body {
   justify-content: center;
   align-items: center;
   height: 40px;
-  width: 40px;
+  width: 60px;
   background-color: lightsteelblue;
   cursor: pointer;
   user-select: none;
 }
 
 .indicator.active {
-  background-color: tomato;
+  background-color: lightskyblue;
 }
